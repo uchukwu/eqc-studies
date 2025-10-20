@@ -7,8 +7,8 @@ and simulation platform for an entropy-based all-optical quantum computing
 architecture leveraging time-bin encoding. Building on the company's entropy
 computer concept, the program will integrate quantum optics, open quantum system
 analysis, and advanced computational methods to validate and refine the
-approach. Outcomes will position the organization for future gate-based quantum
-technologies with clear benchmarks and deployment strategies.
+approach. Outcomes will position the research effort for future gate-based
+quantum technologies with clear benchmarks and deployment strategies.
 
 ## Objectives
 
@@ -96,7 +96,8 @@ technologies with clear benchmarks and deployment strategies.
 
 ## Next Steps
 
-1. Kickoff workshop to align stakeholders on scope and deliverables.
+1. Kickoff workshop to align the core stakeholders—a quantum developer lead and
+   a prospective quantum science collaborator—on scope and deliverables.
 2. Assign workstream leads for modeling, simulation, and benchmarking.
 3. Establish version-controlled workflows and continuous integration pipelines.
 4. Begin detailed derivations and prototype simulations per the research plan.
