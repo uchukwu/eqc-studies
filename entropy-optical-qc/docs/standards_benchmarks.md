@@ -24,6 +24,22 @@ quality standards for the entropy-based all-optical quantum computing program.
   merges.
 - **Reproducibility**: Provide configuration snapshots (YAML/JSON) and random
   seeds for every simulation batch.
+- **Programming semantics**: Validate SIGPLAN domain coverage via
+  `evaluate_sigplan_alignment` and document categorical/type-theoretic
+  invariants in code reviews.
+
+## Programming Standards (SIGPLAN Alignment)
+
+- **Foundational coverage**: Every release must demonstrate how category theory,
+  linear types, semantics, IR infrastructure, and optimization/verification are
+  represented in the codebase.
+- **Probabilistic integration**: Ensure probabilistic programming hooks honour
+  stochastic lambda semantics, probability monads, and probabilistic Hoare
+  logic constraints.
+- **Compiler bridges**: Track lowering paths to QIR/MLIR and verify preservation
+  of linear constraints and entropy annotations.
+- **Formal verification**: Record outcomes of HoTT/Agda proofs or analogous
+  checks for critical gates and controllers.
 
 ## Benchmark Metrics
 

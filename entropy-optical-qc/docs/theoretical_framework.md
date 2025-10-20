@@ -68,6 +68,53 @@ time-bin encoding.
      information, and resource estimation.
    - Automate reporting (plots, tables) for decision making.
 
+## SIGPLAN-Aligned Programming Semantics
+
+1. **Categorical Modeling Layer**
+   - Represent photonic processes as morphisms in dagger compact closed
+     categories to align with POPL/ICFP lineage.
+   - Map monoidal composition to interferometer layouts and entropy reservoirs
+     for traceable semantics.
+
+2. **Linear and Dependent Types**
+   - Employ linear type systems so that qubits/time-bins are consumed exactly
+     once, enforcing no-cloning constraints in all APIs.
+   - Introduce dependent types (e.g., via Agda/Coq bindings) to encode entropy
+     budgets and resource guarantees.
+
+3. **Semantic Preservation and IR Bridges**
+   - Provide denotational models linking code objects to Hilbert-space
+     operators, enabling equivalence proofs.
+   - Implement compiler bridges that lower to QIR/MLIR while preserving linear
+     constraints and entropy annotations.
+
+4. **Optimization and Verification**
+   - Reuse SSA, dataflow, and constraint propagation to simplify circuits and
+     schedule entropy interactions.
+   - Integrate HoTT/Cubical Agda proofs for gate equivalence and linear logic
+     checkers for pipeline validation.
+
+## Probabilistic Computing Extensions
+
+1. **Stochastic Semantics**
+   - Embed probability monads to capture sampling, conditioning, and expectation
+     operations in entropy controllers.
+   - Support stochastic lambda-calculus evaluators for modeling measurement
+     feedback and adaptive control.
+
+2. **Type-Aware Inference**
+   - Track distributional types to ensure inference validity and quantify
+     approximation error in entropy optimization loops.
+   - Connect to probabilistic Hoare logic to reason about safety and stability
+     under noise.
+
+3. **Compiler Tooling**
+   - Incorporate automatic differentiation and graph-lowering passes inspired by
+     probabilistic programming languages (Pyro, NumPyro) for entropy-aware
+     optimization.
+   - Develop verification harnesses to cross-check probabilistic controllers
+     against entropy benchmarks.
+
 ## Programmatic Guidelines
 
 - **Modularity**: Each optical component and entropy channel should be a class
@@ -80,6 +127,8 @@ time-bin encoding.
   leverage vectorization and just-in-time compilation when possible.
 - **Documentation**: Maintain docstrings and usage examples; link code to
   theoretical derivations in documentation.
+- **SIGPLAN utilities**: Leverage `entropy_optical_qc.programming` to capture
+  categorical semantics, type invariants, and probabilistic hooks in code.
 
 ## Integration with Existing Work
 

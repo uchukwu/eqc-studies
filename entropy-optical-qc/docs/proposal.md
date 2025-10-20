@@ -16,9 +16,11 @@ technologies with clear benchmarks and deployment strategies.
    quantum gates.
 2. Design and implement a modular simulation environment that captures open
    system dynamics, entropy flows, and time-bin encoding.
-3. Define benchmarking standards and validation protocols to assess gate
+3. Integrate ACM SIGPLAN-aligned programming semantics (categorical models,
+   linear types, verified compilation, probabilistic reasoning) into tooling.
+4. Define benchmarking standards and validation protocols to assess gate
    performance and scalability.
-4. Produce actionable insights and roadmaps for transitioning to experimental
+5. Produce actionable insights and roadmaps for transitioning to experimental
    prototypes and gate-based architectures.
 
 ## Scope
@@ -26,7 +28,8 @@ technologies with clear benchmarks and deployment strategies.
 - **Theoretical modeling**: Hamiltonian derivations, entropy reservoir design,
   and time-bin encoding strategies.
 - **Simulation development**: Master-equation solvers, stochastic methods, and
-  control optimization loops.
+  control optimization loops, SIGPLAN-aware programming profiles, and IR
+  integration.
 - **Benchmarking**: Metrics for entropy production, gate fidelity, and resource
   usage.
 - **Documentation and reporting**: Research memos, technical reports, and
@@ -39,11 +42,13 @@ technologies with clear benchmarks and deployment strategies.
    established quantum optics theory.
 2. **Model Construction**: Formulate Hamiltonians and Lindbladian operators for
    entropy-reservoir interactions and time-bin gates.
-3. **Simulation Framework**: Build upon existing Q-parallel and Zeno_constraint
+3. **SIGPLAN Integration**: Encode categorical semantics, linear type systems,
+   and probabilistic programming hooks following ACM SIGPLAN guidance.
+4. **Simulation Framework**: Build upon existing Q-parallel and Zeno_constraint
    codebases to create a scalable Python toolkit.
-4. **Benchmarking**: Implement standards defined in `standards_benchmarks.md` to
+5. **Benchmarking**: Implement standards defined in `standards_benchmarks.md` to
    evaluate performance across reference scenarios.
-5. **Iteration Loop**: Use simulation insights to refine theoretical models and
+6. **Iteration Loop**: Use simulation insights to refine theoretical models and
    propose experimental validation strategies.
 
 ## Deliverables
@@ -51,7 +56,8 @@ technologies with clear benchmarks and deployment strategies.
 - Research plan and roadmap (`research_plan.md`).
 - Theoretical framework documentation (`theoretical_framework.md`).
 - Standards and benchmarks documentation (`standards_benchmarks.md`).
-- Python package skeleton (`src/entropy_optical_qc/`).
+- Python package skeleton (`src/entropy_optical_qc/`) including
+  `programming/sigplan_integration.py` for ACM SIGPLAN alignment.
 - Quarterly progress reports and cumulative technical documentation.
 
 ## Timeline (High-Level)
@@ -67,8 +73,9 @@ technologies with clear benchmarks and deployment strategies.
 
 - **Personnel**: Quantum theorists, optical engineers, computational scientists,
   software developers.
-- **Tools**: Python ecosystem (QuTiP, JAX), HPC resources, version control
-  infrastructure.
+- **Tools**: Python ecosystem (QuTiP, JAX), probabilistic programming stacks
+  (Pyro/NumPyro), proof assistants (Agda, Coq) for type-theoretic checks, HPC
+  resources, version control infrastructure.
 - **Budget**: Allocation for computing resources, literature access, conference
   travel, and potential experimental collaborations.
 

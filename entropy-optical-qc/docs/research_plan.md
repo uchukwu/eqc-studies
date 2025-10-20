@@ -36,6 +36,9 @@ ordered by priority and grouped into thematic workstreams.
    - Implement master-equation and stochastic trajectory solvers.
    - Incorporate entropy control knobs (reservoir engineering, feedback loops).
    - Reproduce benchmark scenarios from Nguyen et al. to validate modeling.
+   - Instantiate SIGPLAN-aligned programming profiles to ensure models expose
+     categorical semantics, linear types, and verified compilation pathways via
+     `default_quantum_sigplan_profile`.
 
 ## Priority 2 — Entropy-Driven Gate Design and Optimization
 
@@ -53,6 +56,8 @@ ordered by priority and grouped into thematic workstreams.
    - Introduce realistic noise sources (photon loss, phase noise, detector
      dark counts) into simulations.
    - Compute entropy production rates, fidelity, and logical error rates.
+   - Calibrate probabilistic programming hooks (sampling semantics, inference
+     validation) for entropy-aware controllers.
 
 4. **Benchmark definition**
    - Establish metrics such as process fidelity, entropy throughput, and gate
@@ -74,6 +79,9 @@ ordered by priority and grouped into thematic workstreams.
 3. **Control software infrastructure**
    - Develop modular simulation pipelines enabling parameter sweeps,
      optimization loops, and machine learning-based controllers.
+   - Integrate SIGPLAN-informed IR bridges (QIR, MLIR) and type-checking into
+     orchestration workflows using the programming utilities under
+     `entropy_optical_qc.programming`.
 
 4. **Experimental alignment**
    - Propose diagnostics and measurement strategies required to validate
@@ -96,7 +104,9 @@ ordered by priority and grouped into thematic workstreams.
 ## Required Materials and Resources
 
 - Software: Python 3.11+, QuTiP, Strawberry Fields (optional), NumPy, SciPy,
-  JAX/PyTorch (for differentiable programming), Matplotlib, Pandas.
+  JAX/PyTorch (for differentiable programming), Matplotlib, Pandas, Agda or
+  Coq for type-theoretic verification, probabilistic programming stacks (Pyro,
+  NumPyro).
 - Hardware: Access to HPC cluster or GPU instances for large-scale simulations.
 - Literature: Core references listed above plus recent papers on time-bin
   encoding, photonic quantum computing, entropy production in quantum systems.
